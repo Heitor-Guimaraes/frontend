@@ -1,0 +1,218 @@
+.SobreNos {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAF9FA;
+
+  
+
+    .historia {
+        display: flex;
+        flex-direction: column;
+        margin: 5vh 12%;
+
+        h1 {
+            font: 500 50px poppins;
+            margin: 20px 0px 30px 0px;
+
+        }
+
+        .apresentacao {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 50px;
+
+            .textSobre {
+
+                #sobre {
+                    font: 600 36px poppins;
+                    width: 60%;
+                }
+
+                p {
+                    font: 400 20px poppins;
+                    width: 85%;
+
+                }
+            }
+
+            #imgCoracao {
+                width: 30%;
+                height: 200px;
+
+            }
+
+        }
+
+
+
+
+        .Origem {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 50px;
+            width: 100%;
+
+            .textValores {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                gap: 10px;
+
+                p {
+                    font: 400 20px poppins;
+                }
+            }
+
+            .imgConstrucao {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 70px;
+                gap: 20px;
+
+                img {
+                    width: 120px;
+                }
+
+                .texto {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font: 500 20px poppins;
+
+                    .cor {
+                        color: #D90000;
+                    }
+                }
+            }
+
+        }
+
+        .especializacao {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 50px;
+            width: 100%;
+
+            .premiacoes {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    width: 120px;
+
+                }
+
+                .texto {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font: 400 16px poppins;
+
+                    #cor {
+                        color: #D90000;
+                    }
+                }
+            }
+
+            .textServicos {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+
+
+
+                h1 {
+                    width: 80%;
+                    font: 600 36px poppins;
+                }
+
+                p {
+                    font: 400 20px poppins;
+
+                    .textServicos {
+                        display: flex;
+                        flex-direction: column;
+
+                        p {
+                            font: 400 27px poppins;
+                        }
+                    }
+
+
+
+
+
+
+                    .compromisso {
+                        h1 {
+                            width: 80%;
+                            font: 600 36px poppins;
+                        }
+
+                        p {
+                            width: 70%;
+                            font: 400 20px poppins;
+                        }
+                    }
+
+                    .visao {
+                        h1 {
+                            width: 80%;
+                            font: 600 36px poppins;
+                        }
+
+                        p {
+                            width: 70%;
+                            font: 400 20px poppins;
+                        }
+                    }
+
+                }
+
+
+
+            }
+
+            
+        }
+
+
+    }
+
+    .feedback{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .titulo{
+            width: 90%;
+            margin-bottom: 40px;
+
+            h1 {
+                font: 400 30px poppins;
+            }
+        }
+
+       .left{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 80%;
+        .reforco{
+            display: flex;
+            flex-direction: column;
+            
+        }
+       }
+
+    }
+
+
+}

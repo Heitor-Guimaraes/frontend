@@ -1,0 +1,19 @@
+const primeiraVez = [
+    "1 = a primeira que eu pedi a Deus para ter",
+    "2 = primeira que falo para minha mãe sem mesmo ter beijado",
+    "3 = primeira que conto os segundos para poder conversar",
+    "4 = primeira que é verdadeira comigo sem precisar mentir para que eu me sinta bem",
+    "5 = primeira que mando cartinha falando o que eu sinto",
+    "6 = primeira que me faz realmente ser alguem na vida e ter uma familia",
+    "7 = primeira que realmente olho sem pensar nenhuma malicia ou quero fazer mal",
+    "8 = primeira que eu realmente me importo(se comeu, se bebeu agua, se esta estudando)",
+    "9 = primeira que eu ja fiz um site falando doque acho de vc",
+    "10 = primeira que tem o sorriso mais belo quando rir das minhas paranoias",
+    "11 = primeira que me fez senti vergonha no primeiro beijo(e olha que nem quando eu perdi eu senti)",
+    "12 = primeira que vivo chamando pra sair só para ter um motivo para te ver",
+    "13 = bom esse aqui é segunda que gostei, mais vc é a primeira que realmente gostei e nn quero perde por nada",
+    "14 = primeira pessoa que tive ciume sem mesmo ter tido algo",
+    "15 = primeira pessoa que eu nn quis rebaixa ate o nivel de desiste de tudo",
+    "16 = primeira e unica programadora(que coda em HTML5 e CSS3) que ja beijei",
+    
+]

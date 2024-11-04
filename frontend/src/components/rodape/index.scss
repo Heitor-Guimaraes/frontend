@@ -1,0 +1,204 @@
+.rodape {
+    display: flex;
+    flex-direction: column;    
+    background-color: #2A2A2A;
+    width: 100%;
+
+    .termos{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+
+        button{
+            padding: 10px 30px;
+            background-color: #FF0000;
+            color: #E9DDD1;
+            border-radius: 13px;
+            border: 3px solid transparent;
+            cursor: pointer;
+            font: 600 16px poppins;
+            transition: .3s;
+        }
+
+        button:hover{
+            transform: scale(1.02);
+            border: 3px solid red;
+            background-color: transparent;
+            color: red;
+            
+           }
+           button:active{
+            transform: scale(1.0);
+            background-color: red;
+            color: #fff; 
+           }
+    }
+
+    .informacoes {
+        display: flex;
+        flex-direction: column;
+        background-color: #FCFCFC;
+        box-shadow: 3px 3px 8px #00000050;
+        margin-top: 50px;
+        gap: 20px;
+        border-radius: 10px;
+        padding: 15px;
+        max-width: 100%; 
+        width: 100%;
+
+        .nome,
+        .email,
+        .numero,
+        .mensagem {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            width: 100%; 
+            max-width: 500px; 
+
+            h1 {
+                font: 500 22px poppins;
+            }
+
+            input,
+            textarea {
+                outline: none;
+                border: 1px solid #00000050;
+                border-radius: 3px;
+                padding: 5px 10px;
+                width: 100%; 
+                box-sizing: border-box;
+            }
+
+            textarea {
+                height: 100px; 
+            }
+        }
+
+       
+    }
+
+    .rodainfo1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px 100px 0px 30px;
+        padding: 30px;
+        
+        p {
+            font: 300 24px poppins;
+            color: #ffff;
+        }
+
+        .imagens {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    .RiscoBranco {
+        border: 1px solid #787878;
+    }
+
+    .meioRodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px 0px;
+        gap: 50px;
+
+        .esquerda,
+        .direita {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 5px;
+
+            h1 {
+                font: 600 30px poppins;
+                color: #ffff;
+            }
+
+            a {
+                text-decoration: none;
+                color: #787878;
+            }
+
+            a:hover {
+                color: #AE3139;
+            }
+
+            p {
+                font: 400 16px poppins;
+                color: #787878;
+            }
+
+            p:hover {
+                color: #AE3139;
+            }
+
+            button{
+                background-color: transparent;
+                border: none;
+                font: 400 16px poppins;
+                color: #787878;
+                align-self: self-start;
+                margin-left: -6px;
+                cursor: pointer;
+            }
+            button:hover {
+                color: #AE3139;
+            }
+        }
+    }
+
+    .reta {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .RiscoBranco2 {
+            width: 1400px;
+            border: 1px solid #787878;
+        }
+    }
+
+    #fimRodape {
+        padding: 20px;
+        text-align: center;
+        font: 400 18px poppins;
+        color: #ffff;
+    }
+
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .fechar-popup {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+}

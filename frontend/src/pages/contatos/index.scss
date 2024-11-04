@@ -1,0 +1,176 @@
+
+.paginaContatos{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #f0e6e6;
+    
+
+    .secao1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 70px;
+        gap: 20px;
+
+        .cardzin{
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            padding: 15px;
+            margin-top: 50px;
+            height: 150px;
+            background-color: #F5F5F5;
+            border-radius: 5px;
+            box-shadow:  3px 3px 8px #00000025;
+
+            .linha{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+
+                h1{
+                    font: 400 16px poppins;
+                }
+            }
+        }
+
+
+        .informacoes{
+            display: flex;
+            flex-direction: column;
+            background-color: #FCFCFC;
+            box-shadow:  3px 3px 8px #00000050;
+            margin-top: 50px;
+            gap: 20px;
+            border-radius: 10px;
+            padding: 15px;
+
+            .nome{
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                width: 500px;
+
+                h1{
+                    font: 500 22px poppins;
+                }
+                input{
+                    outline: none;
+                    border: 1px solid #00000050;
+                    border-radius: 3px;
+                    padding: 5px 10px;
+                }
+            }
+
+            .email{
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                width: 500px;
+
+                h1{
+                    font: 500 22px poppins;
+                }
+                input{
+                    outline: none;
+                    border: 1px solid #00000050;
+                    border-radius: 3px;
+                    padding: 5px 10px;
+                }
+            }
+
+            .numero{
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                width: 500px;
+
+                h1{
+                    font: 500 22px poppins;
+                }
+                input{
+                    outline: none;
+                    border: 1px solid #00000050;
+                    border-radius: 3px;
+                    padding: 5px 10px;
+                }
+            }
+
+            .mensagem{
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                width: 500px;
+
+                h1{
+                    font: 500 22px poppins;
+                }
+                textarea{
+                    outline: none;
+                    height: 100px;
+                    border: 1px solid #00000050;
+                    border-radius: 3px;
+                    padding: 5px 10px;
+                    
+                }
+            }
+        }
+    }
+
+    .termos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 50px 0px 40px 0px;
+        gap: 15px;
+
+        input{
+            width: 22px;
+        }
+        p{
+            font: 400 16px poppins;
+        }
+        button{
+           
+            font:500 16px poppins;
+            padding: 10px 25px;
+            color: #ffff;
+            border: none;
+            border-radius: 5px;
+            background-color: #D81010;
+            text-decoration: 3px solid transparent;
+            transition: .3s;
+            cursor: pointer;
+        }
+        button:hover{
+            transform: scale(1.01);
+            border: 3px solid red;
+            background-color: transparent;
+            color: red;
+          
+            
+           }
+           button:active{
+            transform: scale(1.0);
+            background-color: red;
+            color: #fff; 
+            color: #fff;
+            
+           }
+
+    }
+
+    #suporte{
+        width: 100px;
+        position: fixed;
+        bottom: 24px;
+        right: 16px;
+    }
+
+ 
+
+}  

@@ -1,0 +1,21 @@
+.notfound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+
+    .centro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h1{
+            font: 800 50px/100px poppins;
+            color: #df0f0f;
+        }
+    }
+    
+}

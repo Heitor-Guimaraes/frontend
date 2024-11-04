@@ -1,0 +1,174 @@
+.addimovel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 40px 30px;
+    background-color: #ffffff;
+
+    .add {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        gap: 20px;
+
+        button {
+            margin-bottom: 20px;
+        }
+
+
+        input[type='file'] {
+            display: none;
+        }
+
+        .formatInput {
+            width: 150px;
+            height: 150px;
+            border: 5px solid #00000050;
+            border-radius: 5px;
+            display: flex;
+            background-color: transparent;
+            align-items: center;
+            justify-content: center;
+            background-position: center;
+            background-size: cover;
+            z-index: 2;
+
+            p {
+                font-size: 50px;
+                color: #828282;
+                z-index: -2;
+            }
+
+        }
+
+        .botoes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+
+            button {
+                padding: 15px 30px;
+                border-radius: 25px;
+                border: none;
+                background-color: #D81010;
+                color: #F5F5F5;
+                font: 400 14px poppins;
+                cursor: pointer;
+                transition: .4s;
+            }
+
+            button:hover {
+                transform: scale(1.1);
+                color: #D81010;
+                background-color: #ffffff;
+                border: 1px solid #D81010;
+            }
+
+            button:active {
+                transform: scale(1.0);
+                color: #F5F5F5;
+                background-color: #D81010;
+                border: none;
+            }
+        }
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        h1 {
+            font: 600 26px poppins;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            height: 40px;
+            border: 1px solid rgba(128, 128, 128, 0.527);
+            font: 400 18px poppins;
+            padding: 10px 10px;
+            border-radius: 7px;
+        }
+
+        .galeria {
+            display: flex;
+            gap: 10px;
+
+            .formatInput {
+                width: 150px;
+                height: 150px;
+                border: 5px solid #00000050;
+                border-radius: 5px;
+                display: flex;
+                background-color: transparent;
+                align-items: center;
+                justify-content: center;
+                background-position: center;
+                background-size: cover;
+                z-index: 2;
+
+                input[type='file'] {
+                    display: none;
+                }
+
+                p {
+                    font-size: 50px;
+                    color: #828282;
+                    z-index: -2;
+                }
+            }
+        }
+
+        textarea {
+            width: 300px;
+            height: 200px;
+            border: 1px solid rgba(128, 128, 128, 0.527);
+            border-radius: 7px;
+            padding: 10px 10px;
+            font: 400 16px poppins;
+        }
+
+        button {
+            padding: 12px 40px;
+            border-radius: 25px;
+            border: none;
+            background-color: #2A2A2A;
+            color: #F5F5F5;
+            font: 400 14px poppins;
+            cursor: pointer;
+        }
+
+        #removerIMG {
+            padding: 15px 30px;
+            border-radius: 25px;
+            border: none;
+            background-color: #D81010;
+            color: #F5F5F5;
+            font: 400 14px poppins;
+            cursor: pointer;
+            transition: .2s;
+            margin-bottom: 30px;
+        }
+
+        #removerIMG:hover {
+            transform: scale(1.1);
+            color: #D81010;
+            background-color: #ffffff;
+            border: 1px solid #D81010;
+        }
+
+        #removerIMG:active {
+            transform: scale(1.0);
+            color: #F5F5F5;
+            background-color: #D81010;
+            border: none;
+        }
+    }
+}
