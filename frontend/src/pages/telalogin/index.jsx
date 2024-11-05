@@ -16,7 +16,7 @@ export default function Telalogin() {
     async function logar() {
         try {
             
-          const infos = await axios.post('http://4.172.207.208:5005/loginADM', 
+          const infos = await axios.post('http://localhost:5005/loginADM', 
             { email: email, senha: senha });
           
           localStorage.setItem('adm-logado', JSON.stringify(infos.data)); 

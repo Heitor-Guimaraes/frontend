@@ -1,160 +1,170 @@
-.telaCorretor{
+$telaCorretor-bg: #E1DBDB;
+$cor-vermelho: #FF0000;
+$cor-texto: #E9DDD1;
+$cor-titulo: #333;
+$cor-borda: gray;
+$cor-tabela-bg: #FF0707;
+$cor-tabela-titulo: #fff;
+$cor-tabela-corpo: #000;
+$cor-popup-bg: rgba(0, 0, 0, 0.5);
+$cor-popup-borda: #ccc;
+
+.telaCorretor {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E1DBDB;
+    background-color: $telaCorretor-bg;
     height: 100vh;
     width: 100%;
 
-    .cabe{
+    // Cabeçalho
+    .cabe {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         padding: 25px 70px;
         width: 100%;
 
-       .esquerda {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        #logo{
-            width: 90px;
-        }
-        .infos{
+        .esquerda {
             display: flex;
-            flex-direction: column;
-            text-align: center;
-            
+            align-items: center;
+            gap: 10px;
 
-            h1{
-                font: 700 22px/20px poppins;
+            #logo {
+                width: 90px;
             }
-            p{
-                font: 400 22px poppins;
+
+            .infos {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                h1 {
+                    font: 700 22px/20px poppins;
+                }
+
+                p {
+                    font: 400 22px poppins;
+                }
             }
         }
-       }
 
-       .direita{
-        display: flex;
-        flex-direction: row;
-        gap: 25px;
-        align-items: center;
+        .direita {
+            display: flex;
+            gap: 25px;
+            align-items: center;
 
-        button{
-            padding: 10px 30px;
-            background-color: #FF0000;
-            color: #E9DDD1;
-            border-radius: 13px;
-            border: 3px solid transparent;
-            cursor: pointer;
-            font: 600 16px poppins;
-            transition: .3s;
+            button {
+                padding: 10px 30px;
+                background-color: $cor-vermelho;
+                color: $cor-texto;
+                border-radius: 13px;
+                border: 3px solid transparent;
+                cursor: pointer;
+                font: 600 16px poppins;
+                transition: .3s;
+
+                &:hover {
+                    transform: scale(1.02);
+                    border: 3px solid $cor-vermelho;
+                    background-color: transparent;
+                    color: $cor-vermelho;
+                }
+
+                &:active {
+                    transform: scale(1.0);
+                    background-color: $cor-vermelho;
+                    color: #fff;
+                }
+            }
         }
-
-        button:hover{
-            transform: scale(1.02);
-            border: 3px solid red;
-            background-color: transparent;
-            color: red;
-            
-           }
-           button:active{
-            transform: scale(1.0);
-            background-color: red;
-            color: #fff; 
-           }
-       }
     }
 
-    .card{
+    // Card
+    .card {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         border-radius: 10px;
-        padding: 50px 50px;
+        padding: 50px;
         width: 90%;
         background-color: #fff;
 
-        .esquerdaCard{
+        .esquerdaCard {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            
-            h1{
+
+            h1 {
                 font: 500 32px poppins;
-                span{
-                    color: #FF0000;
+                span {
+                    color: $cor-vermelho;
                 }
             }
 
-            .infos{
+            .infos {
                 display: flex;
-                flex-direction: row;
+                align-items: center;
                 gap: 10px;
-                align-items: center;    
-                
-                p{
+
+                p {
                     font: 500 18px poppins;
-                    span{
-                        color: #FF0000;
+                    span {
+                        color: $cor-vermelho;
                     }
                 }
             }
         }
 
-        .direitaCard{
+        .direitaCard {
             display: flex;
             flex-direction: column;
             gap: 20px;
 
-            button{
+            button {
                 padding: 10px 30px;
-                background-color: #FF0000;
-                color: #E9DDD1;
+                background-color: $cor-vermelho;
+                color: $cor-texto;
                 border-radius: 7px;
                 border: 3px solid transparent;
                 cursor: pointer;
                 font: 600 16px poppins;
                 transition: .3s;
+
+                &:hover {
+                    transform: scale(1.02);
+                    border: 3px solid $cor-vermelho;
+                    background-color: transparent;
+                    color: $cor-vermelho;
+                }
+
+                &:active {
+                    transform: scale(1.0);
+                    background-color: $cor-vermelho;
+                    color: #fff;
+                }
             }
-    
-            button:hover{
-                transform: scale(1.02);
-                border: 3px solid red;
-                background-color: transparent;
-                color: red;
-                
-               }
-               button:active{
-                transform: scale(1.0);
-                background-color: red;
-                color: #fff; 
-               }
         }
     }
 
-    .seccao2{
+    // Seção 2
+    .seccao2 {
         display: flex;
-        flex-direction: row;
         justify-content: center;
         gap: 50px;
         width: 100%;
-        margin: 50px 0px;
+        margin: 50px 0;
 
-        .bloco{
+        .bloco {
             display: flex;
             flex-direction: column;
             text-align: center;
             margin-bottom: 80px;
             gap: 10px;
 
-            h1{
+            h1 {
                 font: 400 27px poppins;
             }
 
-            p{
+            p {
                 font: 300 20px poppins;
                 background-color: #fff;
                 border-radius: 7px;
@@ -163,128 +173,121 @@
         }
     }
 
-    .rodapeCorretor{
+    // Rodapé
+    .rodapeCorretor {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 100vh;
         background-color: #fff;
         align-items: center;
-        
 
-        .titulo{
+        .titulo {
             width: 90%;
-           h1{
-            padding: 50px;
-            font: 400 40px poppins;
-           }
+
+            h1 {
+                padding: 50px;
+                font: 400 40px poppins;
+            }
         }
 
-        .lupa{
-            margin: 50px 0px 20px 0px;
+        .lupa {
+            margin: 50px 0 20px;
             position: relative;
-            input{
+
+            input {
                 width: 400px;
                 height: 40px;
                 border-radius: 10px;
-                border: 1px solid gray;
+                border: 1px solid $cor-borda;
                 padding: 8px 5px 8px 30px;
                 font: 400 20px poppins;
-                
             }
 
-            img{
+            img {
                 position: absolute;
                 top: 12px;
                 left: 10px;
             }
         }
 
-        .table{
+        // Tabela
+        .table {
             width: 100%;
             display: flex;
-            flex-direction: row;
             justify-content: center;
             margin-bottom: 100px;
-        
-            .tabela{
+
+            .tabela {
                 border-collapse: collapse;
                 margin: 25px 0;
                 font-size: 0.9em;
                 width: 85%;
-                border-radius: 5px 5px 0 0 ;
+                border-radius: 5px 5px 0 0;
                 overflow: hidden;
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-        
+
                 thead tr {
-                    background-color: #FF0707;
-                    color: #fff;
+                    background-color: $cor-tabela-bg;
+                    color: $cor-tabela-titulo;
                     text-align: center;
                     font: 500 16px poppins;
-                    
-                   
                 }
-                th{
+
+                th {
                     width: 200px;
-                    padding: 10px 0px;
-                    
+                    padding: 10px 0;
                 }
-        
-                td{
-                    padding: 15px 15px;
-                    color: #000000;
+
+                td {
+                    padding: 15px;
+                    color: $cor-tabela-corpo;
                     text-align: center;
                     font: 500 16px poppins;
                     background-color: #fff;
-                    
-                    #lixeira {
-                        width: 30px;
-                        height: auto;
-                        cursor: pointer;
-                    }
+
+                    #lixeira,
                     #editar {
                         width: 30px;
                         height: auto;
                         cursor: pointer;
                     }
                 }
-        
+
                 tbody tr {
                     border-bottom: 1px solid #dddd;
-                    
                 }
-        
+
                 tbody tr:last-of-type {
                     border-bottom: 2px solid #EF7C1D;
                 }
-        
-                tbody tr.active-row{
+
+                tbody tr.active-row {
                     font-weight: bold;
                     color: #009879;
                 }
-        
             }
-        
         }
     }
 
+    // Popup
     .popup {
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5); // Fundo transparente escuro
+        background-color: $cor-popup-bg;
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 1000; // Para garantir que fique por cima dos outros elementos
+        z-index: 1000;
 
         .popup-content {
             background-color: #fff;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); // Sombra
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             width: 400px;
             max-width: 90%;
             text-align: center;
@@ -295,22 +298,22 @@
                 width: 100px;
                 height: 100px;
                 border-radius: 50%;
-                margin: 10px auto 30px auto;
+                margin: 10px auto 30px;
             }
 
             .foto {
                 width: 50%;
                 padding: 10px;
                 margin-bottom: 15px;
-                border: 1px solid #ccc;
+                border: 1px solid $cor-popup-borda;
                 border-radius: 5px;
                 font-size: 16px;
-                margin: 0px auto;
+                margin: 0 auto;
             }
 
             h2 {
                 margin-bottom: 20px;
-                color: #333;
+                color: $cor-titulo;
                 font-size: 24px;
             }
 
@@ -326,7 +329,7 @@
                 width: 100%;
                 padding: 10px;
                 margin-bottom: 15px;
-                border: 1px solid #ccc;
+                border: 1px solid $cor-popup-borda;
                 border-radius: 5px;
                 font-size: 16px;
             }
@@ -346,22 +349,152 @@
                     &:first-child {
                         background-color: #28a745; 
                         color: white;
-                    }
 
-                    &:first-child:hover {
-                        background-color: #218838;
+                        &:hover {
+                            background-color: #218838;
+                        }
                     }
 
                     &:last-child {
                         background-color: #dc3545; 
                         color: white;
-                    }
 
-                    &:last-child:hover {
-                        background-color: #c82333;
+                        &:hover {
+                            background-color: #c82333;
+                        }
                     }
                 }
             }
+        }
+    }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+    .cabe {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+
+        .direita {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    .card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .seccao2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .rodapeCorretor {
+        .titulo h1 {
+            font-size: 28px;
+        }
+
+        .lupa {
+            input {
+                width: 100%;
+            }
+        }
+
+        .table {
+            .tabela {
+                width: 100%;
+                font-size: 0.8em;
+
+                th {
+                    font-size: 14px;
+                }
+
+                td {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .popup-content {
+        width: 90%;
+        padding: 20px;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        input {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .cabe {
+        padding: 10px;
+
+        .esquerda {
+            gap: 5px;
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .direita button {
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+    }
+
+    .card {
+        padding: 15px;
+
+        .esquerdaCard h1 {
+            font-size: 24px;
+        }
+
+        .direitaCard button {
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+    }
+
+    .seccao2 {
+        .bloco h1 {
+            font-size: 22px;
+        }
+
+        .bloco p {
+            font-size: 18px;
+        }
+    }
+
+    .rodapeCorretor .titulo h1 {
+        font-size: 24px;
+    }
+
+    .popup-content {
+        h2 {
+            font-size: 18px;
+        }
+
+        input {
+            font-size: 12px;
+        }
+
+        .popup-buttons button {
+            padding: 8px 15px;
+            font-size: 14px;
         }
     }
 }

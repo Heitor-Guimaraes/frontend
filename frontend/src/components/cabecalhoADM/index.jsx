@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
+import MenuLateral from '../menuAdm';
 
 export default function CabecalhoADM() {
 
@@ -33,6 +34,7 @@ export default function CabecalhoADM() {
 
     return (
         <div className="cabecalhoo">
+            <MenuLateral /> 
             <h1>Seja bem-vindo, <span>{infos.nome}</span></h1>
             
             <div className="direitinha">

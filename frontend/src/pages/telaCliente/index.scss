@@ -6,18 +6,17 @@
     width: 100%;
     background-color: #E1DBDB;
 
-    
     .seccao1 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 90%; 
+        width: 90%;
         max-width: 1200px;
-        background-color: #ffff;
-        padding: 20px 50px; 
+        background-color: #fff;
+        padding: 20px 50px;
         border-radius: 7px;
-        margin: 50px 0px;
+        margin: 50px 0;
 
         .texto {
             display: flex;
@@ -34,7 +33,7 @@
                 flex-direction: column;
 
                 h1 {
-                    font: 700 24px poppins;
+                    font: 700 24px 'Poppins';
 
                     span {
                         color: #D90000;
@@ -43,43 +42,45 @@
 
                 .email {
                     display: flex;
-                    flex-direction: row;
                     align-items: center;
                     gap: 10px;
-                    font: 400 14px poppins;
+                    font: 400 14px 'Poppins';
                 }
             }
         }
 
         .editar {
             display: flex;
-            flex-direction: row;
             gap: 20px;
 
             button {
                 padding: 8px 20px;
-                font: 600 18px poppins;
-                color: #ffff;
+                font: 600 18px 'Poppins';
+                color: #fff;
                 background-color: #D90000;
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
                 transition: 0.3s;
+
+                &:hover {
+                    background-color: #c70000;
+                }
             }
         }
     }
 
     #atalho {
-        font: 700 24px poppins;
+        font: 700 24px 'Poppins';
         width: 90%;
-        margin: 20px 0px;
+        margin: 20px auto;
         max-width: 1200px;
     }
 
     .seccao2 {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
         width: 90%;
         max-width: 1200px;
@@ -87,52 +88,58 @@
         a {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
-            background-color: #ffff;
+            justify-content: space-between;
+            background-color: #fff;
             text-decoration: none;
-            height: 200px; 
-            width: calc(50% - 20px); 
-            padding: 15px; 
+            height: 200px;
+            width: calc(50% - 20px);
+            padding: 15px;
             border-radius: 7px;
-            box-shadow: 0px 7px 15px gray;
+            box-shadow: 0 7px 15px gray;
             transition: 0.3s;
-
-           
+            overflow: hidden;
 
             h1 {
                 text-align: center;
-                font: 500 20px poppins;
+                font: 500 20px 'Poppins';
                 color: #D90000;
+                margin: 10px 0;
             }
 
             .caixinha {
                 display: flex;
-                flex-direction: row;
-                gap: 20px;
+                flex-direction: column;
+                flex-grow: 1;
+                gap: 5px;
 
                 p {
-                    width: auto;
-                    color: #000000;
-                    font-size: 14px; 
+                    color: #000;
+                    font-size: 14px;
+                    margin: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                 }
             }
 
-            #contrato {
-                width: 50px;
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+                margin: 0 auto;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 7px 15px #fff;
+                border: 1px solid #D90000;
+            }
+
+            &:active {
+                transform: scale(1.0);
+                box-shadow: 0 7px 15px #D90000;
             }
         }
-        
-        a:hover {
-            transform: scale(1.05); 
-            box-shadow: 0px 7px 15px #ffffff;
-            border: 1px solid #D90000;
-        }
-
-        a:active {
-            transform: scale(1.0);
-            box-shadow: 0px 7px 15px #D90000;
-        }
-        
     }
 
     .edit-popup {
@@ -157,12 +164,12 @@
             text-align: center;
 
             .preview {
-                border: 1px solid #00000025;
-                box-shadow: 0px 0px 10px #00000025;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
                 width: 100px;
                 height: 100px;
                 border-radius: 50%;
-                margin: 10px auto 30px auto;
+                margin: 10px auto 30px;
             }
 
             .foto {
@@ -172,9 +179,7 @@
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 font-size: 16px;
-                margin: 0px  auto;
-                margin-bottom: 10px;
-
+                margin: 0 auto 10px;
             }
 
             h2 {
@@ -196,8 +201,6 @@
                 display: flex;
                 justify-content: space-between;
 
-               
-
                 button {
                     padding: 10px 20px;
                     border: none;
@@ -207,28 +210,28 @@
                     transition: background-color 0.3s;
 
                     &:first-child {
-                        background-color: #28a745; // Verde para confirmar
+                        background-color: #28a745;
                         color: white;
-                    }
 
-                    &:first-child:hover {
-                        background-color: #218838;
+                        &:hover {
+                            background-color: #218838;
+                        }
                     }
 
                     &:last-child {
-                        background-color: #dc3545; // Vermelho para cancelar
+                        background-color: #dc3545;
                         color: white;
-                    }
 
-                    &:last-child:hover {
-                        background-color: #c82333;
+                        &:hover {
+                            background-color: #c82333;
+                        }
                     }
                 }
             }
         }
     }
 
-    .feedbacks{
+    .feedbacks {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -236,84 +239,74 @@
         gap: 10px;
         margin-top: 50px;
 
-        .titulo{
+        .titulo {
             width: 90%;
-            h1{
-                font: 400 32px poppins;
+
+            h1 {
+                font: 400 32px 'Poppins';
                 margin-bottom: 50px;
             }
-        } 
-        
+        }
+
         .comentario {
             display: flex;
-            flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 15px;
             width: 100%;
 
-            h1{
-                font: 400 20px poppins;
+            h1 {
+                font: 400 20px 'Poppins';
             }
 
-            input{
+            input {
                 padding: 5px 10px;
-                font: 400 18px poppins;
+                font: 400 18px 'Poppins';
                 border-radius: 7px;
                 border: 1px solid gray;
                 outline: none;
             }
 
-            button{
+            button {
                 padding: 7px 20px;
                 background-color: #FF0000;
                 color: #E9DDD1;
                 border-radius: 13px;
                 border: 3px solid transparent;
                 cursor: pointer;
-                font: 600 16px poppins;
-                transition: .3s;
+                font: 600 16px 'Poppins';
+                transition: 0.3s;
+
+                &:hover {
+                    transform: scale(1.02);
+                    border: 3px solid red;
+                    background-color: transparent;
+                    color: red;
+                }
+
+                &:active {
+                    transform: scale(1.0);
+                    background-color: red;
+                    color: #fff;
+                }
             }
-    
-            button:hover{
-                transform: scale(1.02);
-                border: 3px solid red;
-                background-color: transparent;
-                color: red;
-                
-               }
-               button:active{
-                transform: scale(1.0);
-                background-color: red;
-                color: #fff; 
-               }
         }
     }
 
-    .avalicoes{
+    .avalicoes {
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: center;
         background-color: #E1DBDB;
-        
-        .protecao{
+
+        .protecao {
             display: flex;
             flex-direction: column;
-            
-
         }
     }
 }
 
-
-
-
-
-
-
-
-/* Responsividade para 1400x800 */
 @media (max-width: 1400px) {
     .pgcliente {
         gap: 40px;
@@ -332,100 +325,62 @@
             h1 {
                 font-size: 24px;
             }
-
-            .email {
-                font-size: 16px;
-            }
         }
 
         .editar {
-            gap: 10px;
-
+            justify-content: center;
             button {
-                font-size: 16px;
-                padding: 8px 20px;
+                width: 100%;
+                margin: 5px 0;
             }
         }
-    }
-
-    .seccao2 a {
-        width: 100%;
-        height: 180px;
-    }
-}
-
-/* Para telas menores de 768px */
-@media (max-width: 768px) {
-    .pgcliente {
-        gap: 30px;
-    }
-
-    .seccao1 {
-        flex-direction: column;
-        padding: 10px 10px;
-        width: 100%;
     }
 
     .seccao2 {
         flex-direction: column;
-        width: 100%;
-        gap: 20px;
-    }
-
-    .seccao2 a {
-        height: 150px; 
-        width: 100%;
-        padding: 10px;
-    }
-
-    /* Mover menu lateral para o topo */
-    .esquerda {
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        padding: 10px;
-        justify-content: center;
         align-items: center;
-    }
-
-    .esquerda .intro {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .esquerda .botoes {
+        gap: 15px;
         width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
+
+        a {
+            width: 90%;
+            height: auto;
+        }
+    }
+
+    .feedbacks {
+        margin-top: 30px;
+
+        .comentario {
+            flex-direction: column;
+            width: 100%;
+
+            input {
+                width: 100%;
+            }
+        }
     }
 }
 
-/* Ajustes para telas pequenas (até 480px) */
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .pgcliente {
-        gap: 20px;
-    }
+        .seccao1 {
+            flex-direction: column;
+        }
 
-    .seccao1 {
-        padding: 10px;
-    }
+        .seccao2 {
+            a {
+                width: 95%;
+                height: auto;
+            }
+        }
 
-    .seccao2 a {
-        height: 130px; 
-        padding: 8px;
-    }
-
-    .seccao2 a h1 {
-        font-size: 16px;
-    }
-
-    .caixinha p {
-        width: auto;
-        font-size: 12px; 
-    }
-
-    .esquerda {
-        flex-direction: column;
-        gap: 10px;
+        .feedbacks {
+            .comentario {
+                input {
+                    width: 95%;
+                }
+            }
+        }
     }
 }
