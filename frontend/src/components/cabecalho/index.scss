@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #D90000;
     width: 100%;
-    padding: 8px 0; 
+    padding: 8px 40px; 
 
     a {
         font: 400 20px poppins;
@@ -23,7 +23,7 @@
 
     .menu {
         display: flex;
-        gap: 1rem;
+        gap:30px;
 
         @media (max-width: 768px) {
             display: none;

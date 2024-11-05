@@ -3,8 +3,6 @@
     flex-direction: column;
     background-color: #FAF9FA;
 
-  
-
     .historia {
         display: flex;
         flex-direction: column;
@@ -13,7 +11,7 @@
         h1 {
             font: 500 50px poppins;
             margin: 20px 0px 30px 0px;
-
+            text-align: center; // Centraliza o título
         }
 
         .apresentacao {
@@ -23,7 +21,6 @@
             margin-bottom: 50px;
 
             .textSobre {
-
                 #sobre {
                     font: 600 36px poppins;
                     width: 60%;
@@ -32,20 +29,15 @@
                 p {
                     font: 400 20px poppins;
                     width: 85%;
-
                 }
             }
 
             #imgCoracao {
                 width: 30%;
                 height: 200px;
-
+                display: block; 
             }
-
         }
-
-
-
 
         .Origem {
             display: flex;
@@ -87,7 +79,6 @@
                     }
                 }
             }
-
         }
 
         .especializacao {
@@ -105,7 +96,6 @@
 
                 img {
                     width: 120px;
-
                 }
 
                 .texto {
@@ -125,8 +115,6 @@
                 flex-direction: column;
                 width: 70%;
 
-
-
                 h1 {
                     width: 80%;
                     font: 600 36px poppins;
@@ -134,85 +122,75 @@
 
                 p {
                     font: 400 20px poppins;
-
-                    .textServicos {
-                        display: flex;
-                        flex-direction: column;
-
-                        p {
-                            font: 400 27px poppins;
-                        }
-                    }
-
-
-
-
-
-
-                    .compromisso {
-                        h1 {
-                            width: 80%;
-                            font: 600 36px poppins;
-                        }
-
-                        p {
-                            width: 70%;
-                            font: 400 20px poppins;
-                        }
-                    }
-
-                    .visao {
-                        h1 {
-                            width: 80%;
-                            font: 600 36px poppins;
-                        }
-
-                        p {
-                            width: 70%;
-                            font: 400 20px poppins;
-                        }
-                    }
-
                 }
-
-
-
             }
-
-            
         }
-
-
     }
 
-    .feedback{
+    .feedback {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
 
-        .titulo{
+        .titulo {
             width: 90%;
             margin-bottom: 40px;
 
             h1 {
                 font: 400 30px poppins;
+                text-align: center; 
             }
         }
 
-       .left{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        width: 80%;
-        .reforco{
+        .left {
             display: flex;
-            flex-direction: column;
-            
+            flex-direction: row;
+            justify-content: start;
+            width: 80%;
+
+            .reforco {
+                display: flex;
+                flex-direction: column;
+            }
         }
-       }
-
     }
+}
 
 
+@media (max-width: 768px) {
+    .SobreNos {
+        .historia {
+            margin: 5vh 5%;
+
+            .apresentacao {
+                flex-direction: column; 
+                align-items: center;
+
+                .textSobre {
+                    width: 100%; 
+                    text-align: center; 
+                }
+
+                #imgCoracao {
+                    display: none; 
+                }
+            }
+
+            .Origem, .especializacao {
+                flex-direction: column; 
+                align-items: center;
+                text-align: center; 
+                gap: 20px;
+            }
+        }
+
+        .feedback {
+            .left {
+                flex-direction: column; 
+                align-items: center;
+                width: 100%; 
+            }
+        }
+    }
 }

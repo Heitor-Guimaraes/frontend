@@ -6,14 +6,14 @@
     #suporte {
         width: 100px;
         cursor: pointer;
-        border: none; 
-        outline: none; 
+        border: none;
+        outline: none;
     }
 
     .menu-button {
         background: none;
-        border: none; 
-        outline: none; 
+        border: none;
+        outline: none;
         cursor: pointer;
     }
 
@@ -26,7 +26,7 @@
         z-index: 10;
         width: 230px;
         padding-bottom: 10px;
-        border: none; 
+        border: none;
     }
 
     .menu ul {
@@ -38,16 +38,15 @@
     .menu li {
         margin: 10px 0;
     }
-   
-    .menu #corretor{
+
+    .menu #corretor {
         margin: 20px 0px -35px 0px;
     }
-    
-    .menu #corretor:hover {
-        background-color: #FF0000; 
-        color: #ffffff; 
-    }
 
+    .menu #corretor:hover {
+        background-color: #FF0000;
+        color: #ffffff;
+    }
 
     .menu li a {
         text-decoration: none;
@@ -59,8 +58,8 @@
     }
 
     .menu li a:hover {
-        background-color: #FF0000; 
-        color: #ffffff; 
+        background-color: #FF0000;
+        color: #ffffff;
     }
 
     .close-button {
@@ -72,6 +71,48 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        outline: none; 
+        outline: none;
+    }
+
+    @media (max-width: 768px) {
+        #suporte {
+            width: 80px; 
+        }
+
+        .menu {
+            right: 0; 
+            width: 180px; 
+            padding-bottom: 8px;
+        }
+
+        .menu li a {
+            font-size: 14px; 
+            padding: 8px;
+        }
+
+        .close-button {
+            font-size: 14px; 
+        }
+    }
+
+    @media (max-width: 480px) {
+        #suporte {
+            width: 60px; 
+        }
+
+        .menu {
+            right: 0;
+            width: 150px; 
+            padding-bottom: 5px;
+        }
+
+        .menu li a {
+            font-size: 12px; 
+            padding: 6px;
+        }
+
+        .close-button {
+            font-size: 12px;
+        }
     }
 }
