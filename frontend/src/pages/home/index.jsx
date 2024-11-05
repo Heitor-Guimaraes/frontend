@@ -20,7 +20,7 @@ export default function Home({ exibir }) {
 
     const a = async () => {
 
-        let b = await axios.get('http://localhost:5005/viewImoveis');
+        let b = await axios.get('http://4.172.207.208:5005/viewImoveis');
         let values = b.data;
         setArray(values);
         console.log(array)

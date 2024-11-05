@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    //baseURL: 'http://4.172.207.208:5005'
-    baseURL: 'http://localhost:5005'
+    baseURL: 'http://4.172.207.208:5005'
 });
 
 export async function cadastroCliente(nome, email, telefone) {
