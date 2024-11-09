@@ -94,7 +94,7 @@ export default function Rodape() {
                     <h1>Ajuda</h1>
                     <button onClick={abrirPopup}>Trabalhe conosco</button> 
                     <Link to="/">Email de Contato</Link>
-                    <Link to="/">Sustentabilidade</Link>
+                    <Link to="/">Fundado por ortelan</Link>
                     
                 </div>
             </div>

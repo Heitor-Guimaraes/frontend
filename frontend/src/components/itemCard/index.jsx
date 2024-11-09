@@ -1,11 +1,25 @@
 
+import axios from 'axios';
 import './index.scss';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
- const ItemCard = ({ nome, status, localizacao, comodos, vagas, capa, id }) => {
+ const ItemCard = ({ nome, status, localizacao, comodos, vagas, foto, id }) => {
+
+    const [img, setImg] = useState('');
+
+    async function find() {
+       const x = await axios.get(`http://4.172.207.208:5005/img/${foto}`);
+       console.log(x.data.url);
+       setImg(x.data.url);
+    }
+
+    useEffect(() => {find()}, [])
+
+
     return(
         <div className="cardImovel">
-            <img className='intro' src={`/imgs/${capa}`} alt="predios" />
+            <img className='intro' src={`${img}`} alt="predios" />
         <h1 id='titulo'>{nome}</h1>
 
         <div className="info1">

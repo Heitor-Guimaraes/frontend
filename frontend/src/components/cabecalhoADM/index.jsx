@@ -4,23 +4,23 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
-import MenuLateral from '../menuAdm';
+
 
 export default function CabecalhoADM() {
 
     const [infos, setInfos] = useState({});
     const navigate = useNavigate();
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        if(!localStorage.getItem('adm-logado')) {
-            navigate('/telalogin');
-        }
-        else {
-            a();
-        }
+    //     if(!localStorage.getItem('adm-logado')) {
+    //         navigate('/telalogin');
+    //     }
+    //     else {
+    //         a();
+    //     }
 
-    }, []);
+    // }, []);
 
     const a = async () => {
         const x = await axios.get(`http://4.172.207.208:5005/readToken/${JSON.parse(localStorage.getItem('adm-logado')).token}`);
@@ -34,7 +34,7 @@ export default function CabecalhoADM() {
 
     return (
         <div className="cabecalhoo">
-            <MenuLateral /> 
+           
             <h1>Seja bem-vindo, <span>{infos.nome}</span></h1>
             
             <div className="direitinha">

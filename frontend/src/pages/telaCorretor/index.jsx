@@ -12,6 +12,7 @@ export default function TelaCorretor() {
     const [array, setArray] = useState([]);
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
     const [telefone, setTelefone] = useState('');
     const idCorretor = storage('corretor-logado').id; 
     const [showPopup, setShowPopup] = useState(false);
@@ -114,7 +115,7 @@ export default function TelaCorretor() {
             }
 
             if(nome.length > 0  && email.length > 0 && telefone.length > 0 ) {
-                await axios.put(`http://4.172.207.208:5005/atualizar/corretor/${editCorretor.nome}/${editCorretor.email}/${editCorretor.senha}/${editCorretor.telefone}/${idCorretor}`);
+                await axios.put(`http://4.172.207.208:5005/atualizar/corretor/${nome}/${email}/${senha}/${telefone}/${idCorretor}`);
            
                 setShowPopup(false);
                 imovelPorCorretor();
@@ -253,26 +254,26 @@ export default function TelaCorretor() {
                         <label>Nome:</label>
                         <input
                             type="text"
-                            value={editCorretor.nome}
-                            onChange={e => setEditCorretor({ ...editCorretor, nome: e.target.value })}
+                            value={nome}
+                            onChange={e => setNome(e.target.value)}
                         />
                         <label>Email:</label>
                         <input
                             type="email"
-                            value={editCorretor.email}
-                            onChange={e => setEditCorretor({ ...editCorretor, email: e.target.value })}
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
                         />
                         <label>Telefone:</label>
                         <input
                             type="phone"
-                            value={editCorretor.telefone}
-                            onChange={e => setEditCorretor({ ...editCorretor, telefone: e.target.value })}
+                            value={telefone}
+                            onChange={e => setTelefone(e.target.value)}
                         />
                         <label>Senha:</label>
                         <input
                             type="password"
-                            value={editCorretor.senha}
-                            onChange={e => setEditCorretor({ ...editCorretor, senha: e.target.value })} 
+                            value={senha}
+                            onChange={e => setSenha(e.target.value)} 
                         />
                         <div className="popup-buttons">
                             <button onClick={handleUpdate}>Confirmar</button>

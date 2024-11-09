@@ -158,7 +158,7 @@ export default function Home({ exibir }) {
                     
                     
                     <ItemCard
-                        capa={item.nm_imagem}
+                        capa={item.nm_foto}
                         nome={item.nm_apartamento}
                         status={item.st_status}
                         localizacao={item.lc_localizacao}

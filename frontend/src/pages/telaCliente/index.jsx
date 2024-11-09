@@ -39,7 +39,7 @@ export default function TelaCliente() {
         if (x.data.nm_foto != null) {
           const z = await axios.get(`http://4.172.207.208:5005/img/${x.data.nm_foto}`)
           setNameImg(z.data.url);
-          console.log(z.data.url);
+          console.log(nameImg);
         } else {
             setNameImg(x.data.nm_foto);
         }
@@ -158,7 +158,7 @@ export default function TelaCliente() {
             <div className="seccao1">
                 <div className="texto">
                   
-                    <img id='usuario' style={{zIndex: `${hiden}` , borderRadius: "50%", width: "75px", height: "75px", border: "1px solid #00000050", boxShadow: "0px 0px 10px #00000050"}} src={`${nameImg != null ? nameImg : '/imgs/6256.254928160821.png'}`} />
+                    <img id='usuario' style={{zIndex: `${hiden}` , borderRadius: "50%", width: "75px", height: "75px", border: "1px solid #00000050", boxShadow: "0px 0px 10px #00000050"}} src={nameImg != null ? nameImg : ''} />
                   
                     <div className="intro">
                         <h1>Bem-vindo, <span>{nome}</span></h1>
